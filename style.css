@@ -1,0 +1,70 @@
+.{
+    margin: 0px;
+}
+@media (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+    /* Otros estilos para tablets */
+  }
+@media(max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0; /* Remueve el margen predeterminado */
+        text-align: center;
+        width: 375px;
+        height: 812px;
+        color: #efefef;
+  }
+}
+  .velo{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0));
+    position:absolute;
+    z-index: 20px;
+}
+  img {
+    display: block; /* Las imágenes son elementos en línea por defecto */
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  h1{
+    color: #FFF;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.75rem;
+  }
+  h2{
+    color: #FFF;
+    text-align:center;
+    font-family: 'Tangerine';
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.74px;
+  }
+    section {
+    background: 
+        linear-gradient(to bottom, #333333, rgba(0,0,0,0)),    
+        url('../Assets/Images/bgOnboarding.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+    flex-shrink: 0;
+    padding: 50px;
+    
+}
+#logo {
+    width: 10rem;
+}
