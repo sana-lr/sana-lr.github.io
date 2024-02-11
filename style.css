@@ -1,8 +1,46 @@
+/*--------------->Secciones<-----------*/
 body{
     margin: 0px;
     padding: 0px;
-    color: #efefef;
+    color: #e0e0e0;
 }
+nav{
+  background: #333;
+  padding: 0.125rem;
+  position: relative;
+  z-index: 3;
+}
+nav li {
+  /* background-color: red; */
+  display: inline-block;
+  text-align: right;
+  margin: 8px;
+  float: right;
+}
+li a{
+  text-decoration: none;
+  color: #fafafa;
+}
+section{
+
+}
+section {
+  background:
+      
+  /* object-fit: cover; */
+  /* background-size: contain; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  width: 100vw;
+  height: auto;
+  /* flex-shrink: 0; */
+  /* padding: 50px; */
+  margin: 0px;
+
+  
+}
+
+/*--------------->Media Queries<-----------*/
 @media (max-width: 768px) {
     body {
       background-color: rgb(223, 202, 15);
@@ -20,44 +58,58 @@ body{
         /*text-align: center;
          width: 375px;
         height: 812px; */
-} */
-}
-nav{
-    background: #000;
-}
-header nav li {
-    background-color: red;
-    display: inline-block;
-    text-align: right;
-    margin: 8px;
-}
-nav ul li a{
-    text-decoration: none;
-}
-img{
-    width: 5rem;
-    display: inline-block;
-    float: left;
-    
-}
-.logoNav{
-  width: 1rem;
-  height: 30rem;
-  display: inline-block;
+    }
+  }
+/*------------------>ids y classes<---------------*/
+
+#logoNav{
+  width: 2.75rem;
+  height: auto;
   float: left;
-  
+  margin:  .75rem 1rem  1rem 2rem;
 }
-  .velo{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0));
-    position:absolute;
-    z-index: 20px;
+#logoHero {
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  left: 50vw;
+  top: 10%;
+  align-content: center;
+  /* background: #000; */
 }
+.velo{
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0)); */
+  background: linear-gradient(to bottom, #333333, rgba(0,0,0,0));
+  width: 100vw;
+  position:relative;
+}
+.servicio{
+  width: 5rem;
+  height: 15rem;
+}
+/* .pagina1{
+  padding: 10px;
+} */
+/* ------------->Imagen<--------------- */
+
   img {
     display: block; /* Las imágenes son elementos en línea por defecto */
     max-width: 100%; /* Hace que la imagen sea responsive */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
+  #imgOnBoard{
+    display: inline-block;
+    position: relative;
+    z-index: -2;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    
+  }
+ 
+
   h1{
     color: #FFF;
     text-align: center;
@@ -78,22 +130,12 @@ img{
     line-height: normal;
     letter-spacing: 5.74px;
   }
-    section {
-    background: 
-        linear-gradient(to bottom, #333333, rgba(0,0,0,0)),    
-        url('../Assets/Images/bgOnboarding.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: auto;
-    flex-shrink: 0;
-    padding: 50px;
     
-}
-#logo {
-    width: 10rem;
-}
+
+
+
+/* ---------------->Promos<--------------- */
+
 .promo{
     clip-path: circle(50% at 50% 50%);
     border-radius: 290px;
@@ -103,4 +145,23 @@ img{
 div.promo{
     background-color: #fff;
     clip-path: circle(50% at 50% 50%);
+}
+#ofertaLanzamiento{
+  display: none;
+}
+/* ---------------->Servicios<--------------- */
+.servicio{
+  width: 11rem;
+  background: #fafafa;
+  color: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 10px;
+  float: left;
+}
+.imgServicio{
+  margin-top: -0.75rem;
+  overflow: hidden;
+  object-fit: cover;
+
 }
